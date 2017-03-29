@@ -187,7 +187,7 @@ public class Compiler {
 		return blank;
 	}
 
-	public static String getNewSubtemplateName() {
+	public synchronized static String getNewSubtemplateName() {
 		subtemplateCount++;
 		return SUBTEMPLATE_PREFIX+subtemplateCount;
 	}
