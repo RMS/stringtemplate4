@@ -77,4 +77,13 @@
 			</plugin>
 		</plugins>
 	</build>
+	<distributionManagement>
+      <repository>
+          <snapshots>
+              <enabled>true</enabled>
+          </snapshots>
+          <id>rms-local</id>
+          <url>http://artifactory.test.local.rmsonecloud.net/artifactory/rms-maven-local</url>
+      </repository>
+    </distributionManagement>
 </project>
